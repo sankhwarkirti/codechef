@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+  int t;
+  cin>>t;
+  while(t--)
+  {
+    int a,n,sum=0;
+    cin>>a;
+    for(int i=a;i>0;i--)
+    {
+      n=a%10;
+      sum=sum+n;
+      a=a/10;
+    }
+    cout<<sum<<endl;
+  }
+}
